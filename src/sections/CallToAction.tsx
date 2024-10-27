@@ -20,7 +20,7 @@ export const CallToAction = () => {
         <div className="section-heading relative">
           <h2 className="section-title">Ready to Transform Your Business?</h2>
           <p className="section-des mt-5">
-          Seamlessly manage orders, transactions, and analytics with Bargainwale's all-in-one solution.
+          Seamlessly manage orders, transactions, and analytics with Bargainwales all-in-one solution.
           </p>
 
           <motion.img

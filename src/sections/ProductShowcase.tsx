@@ -27,7 +27,7 @@ export const ProductShowcase = () => {
             Empowering Businesses, Simplified.
           </h2>
           <p className="section-des mt-5">
-          Automate order management, track billing deadlines, and unlock operational efficiency with Bargainwale's all-in-one business management solution.
+          Automate order management, track billing deadlines, and unlock operational efficiency with Bargainwales all-in-one business management solution.
           </p>
         </div>
 
