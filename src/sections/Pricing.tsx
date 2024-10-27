@@ -29,7 +29,6 @@ const pricingTiers = [
       "Seamlessly manage multiple branches with unified control",
       "Enhanced dashboard for deeper insights and efficient coordination"
     ]
-
   },
   {
     title: "Business",
@@ -37,19 +36,22 @@ const pricingTiers = [
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
-features: [
-    "Comprehensive suite with custom alerts and detailed transaction reports",
-    "Built for large-scale operations needing full data visibility",
-    "Priority support and tailored solutions for complex needs",
-    "Real-time, in-depth analytics for smarter, faster decisions"
-]
-
+    features: [
+      "Comprehensive suite with custom alerts and detailed transaction reports",
+      "Built for large-scale operations needing full data visibility",
+      "Priority support and tailored solutions for complex needs",
+      "Real-time, in-depth analytics for smarter, faster decisions"
+    ]
   },
 ];
 
 export const Pricing = () => {
+  const handleSignUp = () => {
+    // Redirect to the external sign-up page
+    window.location.href = "https://accounts.bargainwale.com/sign-up";
+  };
+
   return (
-    
     <section id="pricing" className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
@@ -96,6 +98,7 @@ export const Pricing = () => {
                 <span className="tracking-tight font-bold text-black/50">/month</span>
               </div>
               <button
+                onClick={buttonText === "Sign up now" ? handleSignUp : undefined}
                 className={twMerge("btn btn-primary w-full mt-[30px]", inverse && "bg-white text-black")}
               >
                 {buttonText}

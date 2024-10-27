@@ -3,7 +3,7 @@ import ArrowIcon from "@/assets/arrow-right.svg";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -15,6 +15,11 @@ export const Hero = () => {
   });
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
+  const handleGetStarted = () => {
+    // Navigate to the external sign-in page
+    window.location.href = "https://accounts.bargainwale.com/sign-in";
+  };
 
   return (
     <section
@@ -35,10 +40,14 @@ export const Hero = () => {
               Streamline your business transactions and manage orders effortlessly with Bargainwale, the comprehensive platform for manufacturers, traders, and sellers.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get Started</button>
+              <button
+                onClick={handleGetStarted}
+                className="btn btn-primary"
+              >
+                Get Started
+              </button>
               <button className="btn btn-text flex gap-1">
                 <span>Learn more</span>
-                {/* <ArrowIcon classname="h-2 w-2" /> */}
               </button>
             </div>
           </div>

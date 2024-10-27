@@ -14,13 +14,18 @@ export const CallToAction = () => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
+  const handleGetStarted = () => {
+    // Redirect to the external sign-in page
+    window.location.href = "https://accounts.bargainwale.com/sign-in";
+  };
+
   return (
     <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container">
         <div className="section-heading relative">
           <h2 className="section-title">Ready to Transform Your Business?</h2>
           <p className="section-des mt-5">
-          Seamlessly manage orders, transactions, and analytics with Bargainwales all-in-one solution.
+            Seamlessly manage orders, transactions, and analytics with Bargainwales all-in-one solution.
           </p>
 
           <motion.img
@@ -44,7 +49,12 @@ export const CallToAction = () => {
         </div>
 
         <div className="flex gap-2 mt-10 justify-center">
-          <button className="btn btn-primary">Get Started</button>
+          <button
+            onClick={handleGetStarted}
+            className="btn btn-primary"
+          >
+            Get Started
+          </button>
           <button className="btn btn-text gap-1">
             <span>Learn more</span>
             <ArrowRight className="h-5 w-5" />
