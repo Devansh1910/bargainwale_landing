@@ -6,58 +6,51 @@ import { motion } from "framer-motion";
 const pricingTiers = [
   {
     title: "Free",
-    monthlyPrice: 0,
+    monthlyPrice: 60,
     buttonText: "Get started for free",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
+      "Essential tools for managing orders and invoices",
+      "Ideal for single-business operations needing streamlined solutions.",
+      "Simplified dashboard for smooth, day-to-day management.",
+      "Basic analytics to keep track of transaction progress.",
     ],
   },
   {
     title: "Pro",
-    monthlyPrice: 9,
+    monthlyPrice: 80,
     buttonText: "Sign up now",
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
-    ],
+      "Advanced analytics and multi-business management in one platform",
+      "Automate billing reminders to avoid missed deadlines and penalties",
+      "Seamlessly manage multiple branches with unified control",
+      "Enhanced dashboard for deeper insights and efficient coordination"
+    ]
+
   },
   {
     title: "Business",
-    monthlyPrice: 19,
+    monthlyPrice: 100,
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
-    features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
-      "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
-    ],
+features: [
+    "Comprehensive suite with custom alerts and detailed transaction reports",
+    "Built for large-scale operations needing full data visibility",
+    "Priority support and tailored solutions for complex needs",
+    "Real-time, in-depth analytics for smarter, faster decisions"
+]
+
   },
 ];
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    
+    <section id="pricing" className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
