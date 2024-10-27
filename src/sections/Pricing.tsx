@@ -48,7 +48,7 @@ const pricingTiers = [
 export const Pricing = () => {
   const handleSignUp = () => {
     // Redirect to the external sign-up page
-    window.location.href = "https://accounts.bargainwale.com/sign-up";
+    window.location.href = "https://dashboard.bargainwale.com";
   };
 
   return (

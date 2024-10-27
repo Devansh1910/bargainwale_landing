@@ -16,7 +16,7 @@ export const CallToAction = () => {
 
   const handleGetStarted = () => {
     // Redirect to the external sign-in page
-    window.location.href = "https://accounts.bargainwale.com/sign-in";
+    window.location.href = "https://dashboard.bargainwale.com";
   };
 
   return (
